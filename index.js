@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["LISTENING TO DISCORD DEVS","BEKIJKT 24/7 UPTIME"];
+const statusMessages = ["LISTENING TO UNDERGROUND","BEKIJKT 24/7 UPTIME"];
 
 
 let currentIndex = 0;
