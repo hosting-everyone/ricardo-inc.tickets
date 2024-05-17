@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["LUISTERT NAAR RICARDO INC","BEKIJKT 24/7 UPTIME"];
+const statusMessages = ["BEKIJKT OPEN STAANDE TICKETS","BEKIJKT 24/7 UPTIME"];
 
 
 let currentIndex = 0;
@@ -73,7 +73,7 @@ function updateStatusAndSendMessages() {
   const nextStatus = statusMessages[(currentIndex + 1) % statusMessages.length];
 
   client.user.setPresence({
-    activities: [{ name: currentStatus, type: Playing}],
+    activities: [{ name: currentStatus, type: ActivityType.Custom}],
     status: 'invisible',
   });
 
